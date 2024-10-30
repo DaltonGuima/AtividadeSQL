@@ -12,7 +12,5 @@ class Repository(private val db : PessoaDataBase) {
         db.pessoaDao().deletePessoa(pessoa)
     }
 
-    fun getAllPessoas(): List<Pessoa>{
-        return db.pessoaDao().getAllPessoas()
-    }
+    fun getAllPessoas() =  db.pessoaDao().getAllPessoas()
 }
